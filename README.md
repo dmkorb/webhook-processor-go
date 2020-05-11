@@ -9,11 +9,17 @@ Por ser apenas um teste de paralelismo, não foi implementado o controle de entr
 
 ## Instalação
 
-Utilizando docker:
+Criando uma imagem docker:
 `````
 git clone https://github.com/dmkorb/webhook-processor-go.git
 docker build -t webhook-processor-go .
 docker run --publish 8000:8000 --name webhook-go --rm webhook-processor-go
+`````
+
+Utilizando a imagem disponibilizada no docker hub:
+`````
+docker pull dmkorb/webhook-processor-go
+docker run --publish 8000:8000 --name webhook-go --rm dmkorb/webhook-processor-go
 `````
 
 ## Utilização
